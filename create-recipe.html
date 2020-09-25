@@ -2,26 +2,39 @@
 <html lang="en">
 
 <head>
-    <title>HTML wireframe</title>
+    <title>New Recipe Wireframe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="form.css">
 </head>
 
 <body>
-    <nav role="navigation">Nav</nav>
+    <header>
+        <nav role="navigation">
+            <button>Log out</button>
+        </nav>
+        <h1>Slicer</h1>
+    </header>
     <main role="main">
 
 
-        <section>
+        <section class='create-recipe-secrion'>
             <form>
-                <label for="email">email</label>
-                <input name="email" type="text" />
+                <label for="title">Recipe title</label>
+                <input name="title" type="text" />
 
-                <label for="password">password</label>
-                <input name="password" type="text" />
+                <label for="category">Category</label>
+                <select name="category">
+                </select>
 
-                <button>Log in</button>
+
+                <label for="ingredients">Ingredients</label>
+                <textarea id="ingredients" name="ingredients" rows="4"
+                    cols="50">Type (or copy and paste) your ingredient list here</textarea>
+                <label for="instructions">Instructions</label>
+                <textarea id="instructions" name="instructions" rows="4"
+                    cols="50">Copy and paste your ingredient list here (optional)</textarea>
+                <button>Create recipe</button>
             </form>
         </section>
 

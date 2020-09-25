@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html {
@@ -15,8 +17,9 @@ body {
     text-align: center;
     line-height: 1.5;
     height: 100vh;
-    width: inherit;
+    width: 100vw;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
 }
 
@@ -24,7 +27,7 @@ nav,
 footer {
     padding: 1% 0;
     background-color: #aaa;
-    width: inherit;
+    width: 100vw;
 }
 
 nav {
@@ -33,14 +36,36 @@ nav {
     left: 0;
     right: 0;
     z-index: 10;
-    width: inherit;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav button {
+    margin-right: 10%;
+    width: 70px;
+    height: 30px;
+}
+
+main section form button {
+    width: 95px;
+    height: 80%;
+
+
+    margin: 3%;
+
+}
+
+h1 {
+    padding-top: 3%;
 }
 
 main {
+    padding-top: 3%;
     width: inherit;
     height: inherit;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 
 }
@@ -50,14 +75,29 @@ form {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    width: 95%;
+    height: 100%;
+
+
 
 
 }
 
 
 section {
-    min-height: 200px;
-    padding: 6% 0;
     background-color: #bbb;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+
+textarea {
+    width: inherit;
     height: inherit;
+    padding: 2%;
+
 }
