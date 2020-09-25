@@ -17,8 +17,24 @@
         <h1>Sliced</h1>
     </header>
     <main role="main">
-        <section class='list'>
+        <section>
             <h2>Recipe name</h2>
+            <form>
+
+
+                <label for="category">Category</label>
+                <select name="category">
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+
+                </select>
+            </form>
+
+
+        </section>
+        <section class="list">
+            <h3>Ingredients</h3>
             <ul>
                 <li>
                     <span class="amount">1 TBSP</span>
@@ -53,31 +69,49 @@
             <button>Add ingredient</button>
         </section>
 
-        <section class='create-recipe-secrion'>
-            <form>
+        <section class="list">
+            <h3>Instructions</h3>
+            <ol class='instructions'>
+                <li>
+                    <span class="num">1. </span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel minima eligendi
+                        expedita.</p>
+                    <button class='exit'> x </button>
+                </li>
 
 
-                <label for="category">Category</label>
-                <select name="category">
-                    <option>One</option>
-                    <option>Two</option>
-                    <option>Three</option>
+                <li>
+                    <span class="num">2. </span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel minima eligendi
+                        expedita.</p>
+                    <button class='exit'> x </button>
+                </li>
 
-                </select>
+                <li>
+                    <span class="num">3. </span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel minima eligendi
+                        expedita.</p>
+                    <button class='exit'> x </button>
+                </li>
 
 
-                <label for="ingredients">Ingredients</label>
-                <textarea id="ingredients" name="ingredients"
-                    rows="4">Type (or copy and paste) your ingredient list here</textarea>
-                <label for="instructions">Instructions</label>
-                <textarea id="instructions" name="instructions"
-                    rows="4">Copy and paste your ingredient list here (optional)</textarea>
+                <li>
+                    <span class="num">4. </span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel minima eligendi
+                        expedita.</p>
+                    <button class='exit'> x </button>
+                </li>
 
-                <div class="row"><button class="edit-button">Save changes</button>
-                    <button class='edit-button'>Delete recipe</button>
-                </div>
-            </form>
+
+            </ol>
+            <button>Add instruction</button>
+            <div class="row">
+                <button class="edit-button">Save changes</button>
+                <button class='edit-button'>Delete recipe</button>
+            </div>
         </section>
+
+
 
 
     </main>

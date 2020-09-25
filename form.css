@@ -154,7 +154,7 @@ li {
 .row {
     display: flex;
     width: inherit;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .edit-button {
@@ -167,4 +167,12 @@ li .exit {
     padding: 0;
     margin: 0;
 
+}
+
+.instructions li {
+    width: 90%;
+}
+
+ol li {
+    align-items: flex-start;
 }
