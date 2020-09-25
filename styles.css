@@ -1,5 +1,12 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
 }
 
 body {
@@ -9,34 +16,91 @@ body {
     color: #444;
     text-align: center;
     line-height: 1.5;
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 nav,
 footer {
-    padding: 1% 0;
+    padding: 0;
     background-color: #aaa;
+    width: 100vw;
 }
+
 
 nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
 }
 
+h1 {
+    padding-top: 5%;
+}
 
+main {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-header {
+section {
+    height: 2;
+    padding: 1em;
+}
+
+/* header {
     padding: 2% 0;
-}
+} */
 
+/* main {
+    padding-top: 3%;
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+} */
+
+/* 
 section {
     min-height: 200px;
     padding: 6% 0;
     background-color: #bbb;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+} */
 
 section:nth-child(even) {
     background-color: #ddd;
+}
+
+
+
+button {
+    width: 145px;
+    height: 45px;
+    margin: 3%;
+
+}
+
+nav button {
+
+    width: 70px;
+    height: 30px;
+
 }

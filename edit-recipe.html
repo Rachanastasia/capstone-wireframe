@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>New Recipe Wireframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+    <nav role="navigation">
+        <button>Log out</button>
+    </nav>
+    <header>
+
+        <h1>Sliced</h1>
+    </header>
+    <main role="main">
+        <section class='list'>
+            <h2>Recipe name</h2>
+            <ul>
+                <li>
+                    <span class="amount">1 TBSP</span>
+                    <span class="ingredient">Olive oil</span>
+                    <button class='exit'> x </button>
+                </li>
+
+                <li>
+                    <span class="amount">1 TBSP</span>
+                    <span class="ingredient">Olive oil</span>
+                    <button class='exit'> x </button>
+                </li>
+
+                <li>
+                    <span class="amount">1 TBSP</span>
+                    <span class="ingredient">Olive oil</span>
+                    <button class='exit'> x </button>
+                </li>
+
+                <li>
+                    <span class="amount">1 TBSP</span>
+                    <span class="ingredient">Olive oil</span>
+                    <button class='exit'> x </button>
+                </li>
+
+                <li>
+                    <span class="amount">1 TBSP</span>
+                    <span class="ingredient">Olive oil</span>
+                    <button class='exit'> x </button>
+                </li>
+            </ul>
+            <button>Add ingredient</button>
+        </section>
+
+        <section class='create-recipe-secrion'>
+            <form>
+
+
+                <label for="category">Category</label>
+                <select name="category">
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+
+                </select>
+
+
+                <label for="ingredients">Ingredients</label>
+                <textarea id="ingredients" name="ingredients"
+                    rows="4">Type (or copy and paste) your ingredient list here</textarea>
+                <label for="instructions">Instructions</label>
+                <textarea id="instructions" name="instructions"
+                    rows="4">Copy and paste your ingredient list here (optional)</textarea>
+
+                <div class="row"><button class="edit-button">Save changes</button>
+                    <button class='edit-button'>Delete recipe</button>
+                </div>
+            </form>
+        </section>
+
+
+    </main>
+    <footer role="content-info">Footer</footer>
+</body>
+
+</html>

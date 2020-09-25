@@ -16,8 +16,8 @@ body {
     color: #444;
     text-align: center;
     line-height: 1.5;
-    height: 100vh;
-    width: 100vw;
+    height: inherit;
+    width: inherit;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -25,79 +25,146 @@ body {
 
 nav,
 footer {
-    padding: 1% 0;
+    padding: 0;
     background-color: #aaa;
     width: 100vw;
 }
+
+section:nth-child(even) {
+    background-color: #bbb;
+}
+
 
 nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    height: 40px;
+    padding: 0.3rem;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
-}
-
-nav button {
-    margin-right: 10%;
-    width: 70px;
-    height: 30px;
-}
-
-main section form button {
-    width: 95px;
-    height: 80%;
-
-
-    margin: 3%;
 
 }
 
 h1 {
-    padding-top: 3%;
+    padding-top: 5%;
 }
 
 main {
-    padding-top: 3%;
-    width: inherit;
-    height: inherit;
+    flex: 2;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
+    justify-content: space-between;
 }
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 95%;
-    height: 100%;
-
-
-
-
-}
-
 
 section {
-    background-color: #bbb;
-    width: 90vw;
+    flex: 2;
+    padding: 1em;
+    background-color: #ddd;
     display: flex;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2%;
+}
+
+.list {
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+form>* {
+    margin-bottom: 0.7rem;
+}
+
+textarea {
+    width: 100%;
+    flex: 2;
+    margin-top: 0.15rem;
+    padding: 0.3rem;
 }
 
 
-textarea {
+
+input {
+    height: 1.7rem;
+    width: 100%;
+}
+
+select {
+    width: 50%;
+    height: 1.7rem;
+}
+
+button {
+    width: 145px;
+    height: 45px;
+    margin-top: 0.7rem;
+
+
+}
+
+nav button {
+
+    width: 70px;
+    height: 30px;
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
     width: inherit;
-    height: inherit;
-    padding: 2%;
+    align-items: center;
+}
+
+li {
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem;
+}
+
+.amount {
+    font-size: 14px;
+}
+
+.ingredient {
+    font-size: 20px;
+}
+
+.exit {
+    width: 30px;
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+}
+
+.edit-button {
+    width: 95px;
+}
+
+li .exit {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
 
 }
